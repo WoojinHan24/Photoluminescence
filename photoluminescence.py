@@ -1,5 +1,7 @@
 import sif_parser
 import matplotlib.pyplot as plt
+from scipy.special import voigt_profile as voigt
+
 def get_sif_file(
     file_name
 ):
@@ -12,43 +14,90 @@ def get_sif_file(
     return data,wavelength
 
 def plot_raw_fig(
-    photon_number,energy,param
+    photon_number,wavelength
 ):
     raw_fig = plt.figure(figsize=(6,4))
     ax=raw_fig.add_subplot(1,1,1)
 
-    ax.plot(energy,photon_number,'k-', linewidth=1.0)
-    ax.set_xlabel('photon energy [J]')
+    ax.plot(wavelength,photon_number,'k-', linewidth=1.0)
+    ax.set_xlabel('wavelength [nm]')
     ax.set_ylabel('detected photon number')
-    ax.plot(energy,three_Lorentzian_function_override(energy,param),'r-')
     return raw_fig
 
-def three_Lorentzian_function(
-    E,E1,E2,E3,D1,D2,D3,A1,A2,A3,C
+def plot_param_fig(
+    photon_number,energy,param, fitting_function
+):
+    param_fig = plt.figure(figsize=(6,4))
+    ax=param_fig.add_subplot(1,1,1)
+
+    ax.plot(energy,photon_number,'k-', linewidth=1.0)
+    ax.set_xlabel('photon energy [eV]')
+    ax.set_ylabel('detected photon number')
+
+    ax.plot(energy,fitting_function(energy,param=param),'r-')
+    return param_fig
+
+def plot_temperature_peak_fig(
+    temperatures, left_peaks, right_peaks
+):
+    fig = plt.figure(figsize=(8,4))
+    ax= fig.subplots(1,2)
+
+    ax[0].plot(temperatures,left_peaks, 'ko')
+    ax[0].set_xlabel('temperature [K]')
+    ax[0].set_ylabel('Peak Position [eV]')
+
+    ax[1].plot(temperatures,right_peaks, 'ko')
+    ax[1].set_xlabel('temperature [K]')
+    ax[1].set_ylabel('Peak Position [eV]')
+
+    fig.tight_layout()
+    return fig
+
+def plot_temperature_width_fig(
+    temperatures, left_peak_widths, right_peak_widths
+):
+    fig = plt.figure(figsize=(8,4))
+    ax= fig.subplots(1,2)
+
+    ax[0].plot(temperatures,left_peak_widths, 'ko')
+    ax[0].set_xlabel('temperature [K]')
+    ax[0].set_ylabel('Peak width [eV]')
+
+    ax[1].plot(temperatures,right_peak_widths, 'ko')
+    ax[1].set_xlabel('temperature [K]')
+    ax[1].set_ylabel('Peak width [eV]')
+
+    fig.tight_layout()
+    return fig
+
+def two_voigt_function(
+    E, E1, E2, S, G1, G2, A1, A2, C
 ):
     #E is energy peak position,
-    #D is the width of each peak
-    #A is amplitude of each lorentzian peak
+    #S is the Gaussian width
+    #G is the Lorentzian width
+    #A is the amplitude of each peak
+    #C is the constant counts
+    return A1*voigt(E-E1,S,G1)+A2*voigt(E-E2,S,G2)+C
 
-    return Lorentzian_function(E,E1,D1,A1)+Lorentzian_function(E,E2,D2,A2)+Lorentzian_function(E,E3,D3,A3)+C
-
-
-def three_Lorentzian_function_override(
-    E,param
+def two_voigt_function_param(
+    E, param
 ):
-    return three_Lorentzian_function(E,param[0],param[1],param[2],param[3],param[4],param[5],param[6],param[7],param[8],param[9])
+    return two_voigt_function(E,param[0],param[1],param[2],param[3],param[4],param[5],param[6],param[7])
 
-
-def two_Lorentzian_function(
-    E,E1,E2,D1,D2,A1,A2,C
+def one_voigt_function(
+    E, E1, S, G1, A1, C
 ):
     #E is energy peak position,
-    #D is the width of each peak
-    #A is amplitude of each lorentzian peak
-    return Lorentzian_function(E,E1,D1,A1)+Lorentzian_function(E,E2,D2,A2)+C
+    #S is the Gaussian width
+    #G is the Lorentzian width
+    #A is the amplitude of each peak
+    #C is the constant counts
+    return A1*voigt(E-E1,S,G1)+C
 
-
-def Lorentzian_function(
-    E,E0,D,A
+def one_voigt_function_param(
+    E, param
 ):
-    return A*D**2/4/((E-E0)**2+(D/2)**2)
+    return one_voigt_function(E,param[0],param[1],param[2],param[3],param[4])
+
