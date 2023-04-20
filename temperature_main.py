@@ -51,7 +51,7 @@ for photon_number,temperature,wavelength,energy in zip(photon_numbers,temperatur
             p1,
             maxfev=60000
         )
-        fitted_fig=pl.plot_param_fig(photon_number,energy,param,pl.one_voigt_function_param)
+        fitted_fig=pl.plot_param_fig(photon_number,energy,param,pl.one_voigt_function)
         fitted_fig.savefig(f"./results/Ruby({temperature})_voigt_fitted_fig.png")
         left_peaks.append(param[0])
         right_peaks.append(np.nan)
@@ -73,7 +73,7 @@ for photon_number,temperature,wavelength,energy in zip(photon_numbers,temperatur
         maxfev=60000
     )
 
-    fitted_fig=pl.plot_param_fig(photon_number,energy,param,pl.two_voigt_function_param)
+    fitted_fig=pl.plot_param_fig(photon_number,energy,param,pl.two_voigt_function)
     fitted_fig.savefig(f"./results/Ruby({temperature})_voigt_fitted_fig.png")
     left_peaks.append(param[0])
     right_peaks.append(param[1])

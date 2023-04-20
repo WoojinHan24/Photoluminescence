@@ -34,7 +34,7 @@ def plot_param_fig(
     ax.set_xlabel('photon energy [eV]')
     ax.set_ylabel('detected photon number')
 
-    ax.plot(energy,fitting_function(energy,param=param),'r-')
+    ax.plot(energy,fitting_function(energy,*param),'r-')
     return param_fig
 
 def plot_temperature_peak_fig(
@@ -81,11 +81,6 @@ def two_voigt_function(
     #C is the constant counts
     return A1*voigt(E-E1,S,G1)+A2*voigt(E-E2,S,G2)+C
 
-def two_voigt_function_param(
-    E, param
-):
-    return two_voigt_function(E,param[0],param[1],param[2],param[3],param[4],param[5],param[6],param[7])
-
 def one_voigt_function(
     E, E1, S, G1, A1, C
 ):
@@ -95,9 +90,3 @@ def one_voigt_function(
     #A is the amplitude of each peak
     #C is the constant counts
     return A1*voigt(E-E1,S,G1)+C
-
-def one_voigt_function_param(
-    E, param
-):
-    return one_voigt_function(E,param[0],param[1],param[2],param[3],param[4])
-

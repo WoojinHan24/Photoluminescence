@@ -1,5 +1,14 @@
 \begin{thebibliography}{1}
 
+\bibitem{Ruby_band_structure}
+Joseph A. Calviello Edward~W. Fisheer and Zindel~H. Heller.
+\newblock Direct t-e phonon relaxation in ruby and its effect upon r-line
+  breadth.
+
+\bibitem{Ruby_temp_theoretical}
+D.~E. McCumber and M.~D. Sturge.
+\newblock Linewidth and temperature shift of the r lines in ruby.
+
 \bibitem{ruby_spec}
 someone.
 \newblock blah.
@@ -9,10 +18,6 @@ someone.
 \newblock blah.
 
 \bibitem{quantum_optics}
-someone.
-\newblock blah.
-
-\bibitem{something}
 someone.
 \newblock blah.
 
