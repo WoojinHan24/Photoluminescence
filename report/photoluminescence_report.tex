@@ -27,7 +27,7 @@
  Analysis between PL peak statics of ruby and temperature is obtained.(\ref{result:temperature_peak_statics})
  The effect by aperture of spectrograph to PL result is declared, and proved.(\ref{result:aperture_effect})
  According to the peak intensity ratio, the mole ratio of $Cr^{3+}$ ion in the ruby is calculated.
- The apparatus data (\cite{ruby_spec}) is also found and compared to the calculation.
+ The apparatus data () is also found and compared to the calculation.
 
 
 \subsection{Photoluminescence : General Theory}
@@ -276,8 +276,8 @@ The file name and detailed contents are table at Fig. \ref{fig:file_appendix}
  Fig. \ref{fig:R6G results}(b) shows counts - energy [$eV$] plot and its gaussian trend line.
  Peak statics of five repeated detection is provided at Fig. \ref{fig:R6G optimize results}.
  $N(E) = A \frac{1} {\sigma \sqrt{2\pi}} e^{-\frac{1}{2} \frac{(E-E_0)^2}{\sigma^2}}$ values are obtained.
- The amplitude $A$ and background light $C$ does not inform a critical phenomena for R6G, the peak position and FWHM matters.
- The band gap betwen LUMO and HOMO is $2.211 \pm 0.001$ [$eV$] and its lifetime is $7.15 \pm 10^-15 $[$s$].
+ The amplitude $A$ and background light $C$ does not inform a critical phenomena for R6G, the peak position and FWHM only matters.
+ The band gap betwen LUMO and HOMO is $2.211 \pm 0.001$ [$eV$] and its lifetime is $(7.15 \pm 0.02) \times 10^{-15} $[$s$].
  \begin{figure}[ht]
   \centering
   \begin{subfigure}[b]{6cm}
@@ -316,10 +316,10 @@ The bumps on the peak is not a random error, but keep appears in repeated measur
 Fig. \ref{fig:R6G total fig}(a) is the total plot of every datum in one plot.
 We can check that exactly same sidebands are at same position in different experiments.
 I have rotated the vials and moved the solutions position during the experiment, it does not have relation with outer variables.
-Therefore, I assumes those sideband have relation with Raman scattering.
+Therefore, I assumes those sideband are related with Raman scattering.
 The Raman shift of R6G has calculated in \cite{rhodamine_HOMO_LUMO}.
 As the molecule in solution moves freely in ethylene glycol, the cross section of the band gap might Raman shifted.
-There are around 10~12 big peaks on raman shift as shown in Fig. \ref{fig:R6G total fig}(b), which is exactly same values to the experimental data.
+There are around 10-12 big peaks on raman shift as shown in Fig. \ref{fig:R6G total fig}(b), which is exactly same numbers to the experimental data.
 Also, the dimer effect has reported from \cite{Rhodamine_dimer}, but in this experiment the solution is diluted enough to ignore the dimer effects.
 
  \begin{figure}[ht]
@@ -340,12 +340,97 @@ Also, the dimer effect has reported from \cite{Rhodamine_dimer}, but in this exp
   \label{fig:R6G total fig}
 \end{figure}
 
-
 \subsection{Ruby PL result by temperature}
 \label{result:temperature_peak_statics}  
+ PL data of ruby for 51 different temperature is measured.
+ Fig. \ref{fig:Ruby_fitted_data} shows four representative PL plots of temperature 260.0, 190.0, 100.0, 6.00 K, 6.0mTorr.
+ As the sample temperature went down, the peaks get sharper, and can find the subtle peak position shift.
+ Unlike the left peak, R1 peak, the right peak, R2 peak get smaller so that at 6.0K, R2 peak is hard to find in noises.
+ The fitting eqauation $N(E)=A_1 V(E-E_1;\sigma,\gamma_1) + A_2 V(E-E_2;\sigma,\gamma_2)+C$, where $V(x;\sigma,\gamma)$ is Voigt profile.
+ Fitting parameters are $E_1$ R1 peak position, $\gamma_1$ R1 peak Lorentzian FWHM and $A_1$ is the total photon number of R1 peak.
+ Same definition belongs to R2 peak.
+ And $\sigma$ is the Gaussian variance coefficient, which must be same for both peak.
+ At extremely low temperature, R2 peak is gone so those values are fitted by one Voigt profile, and R2 peak statics setted NaN value.
+ As this fitting assumes that the spectrograph errors are calculated in the parameter $\sigma$, the $\sigma $[$eV$] to sample temperature does not have any relations.
+ Unfortunately the optical broadening, $\sigma$ is not equal to each temperature, but have some tendency with temperatures.
+ I think that Voigt function fitting is very frajile to have a lot of optimized parameter, so that $\sigma$ have dependacy with sample temperature.
+ Although it is totally fine since Voigt profile is normalized itself so that the amplitude directly means the peak area.
+
+ \begin{figure}[ht]
+  \centering
+  \begin{subfigure}[b]{6cm}
+      \centering
+      \includegraphics[width=6cm]{../results/Ruby(260.0)_voigt_fitted_fig.png}
+      \caption{}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{6cm}
+      \centering
+      \includegraphics[width=6cm]{../results/Ruby(190.0)_voigt_fitted_fig.png}
+      \caption{}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{6cm}
+    \centering
+    \includegraphics[width=6cm]{../results/Ruby(100.0)_voigt_fitted_fig.png}
+    \caption{}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{6cm}
+  \centering
+  \includegraphics[width=6cm]{../results/Ruby(9.2)_voigt_fitted_fig.png}
+  \caption{}
+\end{subfigure}
+\hfill
+  \caption{Ruby PL data of pressure 6.0mTorr, and temperature (a)260.0K (b)190.0K (c)100.0K (d) 6.00K, in count - energy [$eV$] scale and its voigt fitting results (red)}
+  \label{fig:Ruby_fitted_data}
+\end{figure}
+
+Fig. \ref{fig:Ruby_temperature_results} shows the temperature dependance of each peaks, error bar are attached to each data point.
+The error is propagated from the ccd camera resolution, every energy detection should have measurement error of $0.0001$ [$eV$].
+The error from fitting calculation have order of $10^{-10}$ [$eV$], which are very small.
+By using equation \ref{equation:peak_position} and \ref{equation:peak_width}, $\epsilon_n(0)$ and $\alpha_n$, $\Gamma_n(0)$ and $\bar{\alpha_n}$ are fitted.
+As the assumption from \cite{Ruby_temp_theoretical}, internal conversion coefficients $\beta_{12}$ has been disregarded as 0.
+And also, Debye temperature $T_D$ can calculated from the specific heat of $\alpha-Al_2 O_3 $ which is $760 K$.
+Therefore, the peak positions at 0$K$ are $1.7861 \pm 0.0001$, $1.7916 \pm 0.0001$[$eV$].
+
+
+Peak width is not clear enough, since Voigt profile is duplicates by various values of $\gamma$ and $\sigma$.
+And, the Stokes sideband makes fitting goes to local optimal parameters, not the exact value of it.
+So, I suggest to use modified width defined by $\gamma^2 + \sigma^2$.
+With assertion that those value doesn't change a lot since $\sigma \ll \gamma$ holds.
+Therefore, the peak widths at 0$K$ are $(5.6 \pm 0.5)\times 10^-4$, $(5.5 \pm 0.5)\times 10^-4$ [$eV$].
+The lifetime of $^T_1 \rightarrow ^4A_2$ is $7.6 \times 10^{-11}$ s, $ ^2E \rightarrow ^4A_2$ is $7.7 \times 10^{-11}$s each.
+Those lifetime has order of $10^-{11}$ s, which is appropriate for luminescence transition.
+
+$\alpha_1 = -0.0928 \pm 0.0001$, $\alpha_2 = -0.0875 \pm 0.0001$ [$eV$], $\bar{\alpha_1} = 0.3275 \pm 0.0001$, $\bar{\alpha_2} = 0.1901 \pm 0.0001$ [$eV$] values are also fitted.
+Those values have information of $Cr^{3+}$ impurity values by calculation of \cite{fitting_coef_impurity}.
+Unfortunately, the experimental results by $\alpha_n$ to impurity is not available since modifying impuritiy of ruby crystal is too hard.
+So, in this report I use significant approach to calculate $Cr^{3+}$ doping mole fraction in \ref{results:peak_height}
 
 
 
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[b]{6cm}
+      \centering
+      \includegraphics[width=6cm]{../results/Ruby_temperature_peak_fig.png}
+      \caption{}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{6cm}
+      \centering
+      \includegraphics[width=6cm]{../results/Ruby_temperature_width_fig.png}
+      \caption{}
+  \end{subfigure}
+
+  \caption{(a) peak position [$eV$] (b) peak width [$eV$] to sample temperature [K] plot. R1(left), R2(right), red lines are the appropriate fitted functions.}
+  \label{fig:Ruby_temperature_results}
+\end{figure}
+
+\subsection{Peak Height : dopped impurity}
+\label{results:peak_height}
+In \cite{doping_ratio}
 
 \section{Summary}
 

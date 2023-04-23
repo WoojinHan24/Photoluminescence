@@ -2,6 +2,8 @@ import sif_parser
 import matplotlib.pyplot as plt
 from scipy.special import voigt_profile as voigt
 import numpy as np
+import scipy.integrate as integrate
+from functools import partial
 from scipy.constants import pi
 
 def get_sif_file(
@@ -40,16 +42,19 @@ def plot_param_fig(
     return param_fig
 
 def plot_temperature_peak_fig(
-    temperatures, left_peaks, right_peaks
+    temperatures, left_peaks,left_peaks_err, right_peaks,right_peaks_err, left_peak_param, right_peak_param, fitting_function
 ):
     fig = plt.figure(figsize=(8,4))
     ax= fig.subplots(1,2)
 
-    ax[0].plot(temperatures,left_peaks, 'ko')
+    temp=np.linspace(0,260,200)
+    ax[0].errorbar(temperatures,left_peaks,yerr=left_peaks_err, fmt='.k')
+    ax[0].plot(temp,fitting_function(temp,*left_peak_param), 'r-', linewidth=2.0)
     ax[0].set_xlabel('temperature [K]')
     ax[0].set_ylabel('Peak Position [eV]')
 
-    ax[1].plot(temperatures,right_peaks, 'ko')
+    ax[1].errorbar(temperatures,right_peaks,yerr=right_peaks_err,fmt='.k')
+    ax[1].plot(temp,fitting_function(temp,*right_peak_param), 'r-', linewidth=2.0)
     ax[1].set_xlabel('temperature [K]')
     ax[1].set_ylabel('Peak Position [eV]')
 
@@ -57,21 +62,25 @@ def plot_temperature_peak_fig(
     return fig
 
 def plot_temperature_width_fig(
-    temperatures, left_peak_widths, right_peak_widths
+    temperatures, left_peak_widths,left_peak_widths_err, right_peak_widths, right_peak_widths_err, left_peak_width_param, right_peak_width_param, fitting_function
 ):
     fig = plt.figure(figsize=(8,4))
     ax= fig.subplots(1,2)
 
-    ax[0].plot(temperatures,left_peak_widths, 'ko')
+    temp=np.linspace(0,260,200)
+    ax[0].errorbar(temperatures,left_peak_widths,yerr=left_peak_widths_err, fmt='.k')
+    ax[0].plot(temp,fitting_function(temp,*left_peak_width_param), 'r-', linewidth=2.0)
     ax[0].set_xlabel('temperature [K]')
     ax[0].set_ylabel('Peak width [eV]')
 
-    ax[1].plot(temperatures,right_peak_widths, 'ko')
+    ax[1].errorbar(temperatures,right_peak_widths,yerr=right_peak_widths_err, fmt='.k')
+    ax[1].plot(temp,fitting_function(temp,*right_peak_width_param), 'r-', linewidth=2.0)
     ax[1].set_xlabel('temperature [K]')
     ax[1].set_ylabel('Peak width [eV]')
 
     fig.tight_layout()
     return fig
+
 
 def two_voigt_function(
     E, E1, E2, S, G1, G2, A1, A2, C
@@ -97,3 +106,25 @@ def one_gaussian_function(
     E,E0,S,A,C
 ):
     return A/np.sqrt(2*pi)/S * np.exp(-0.5*(E-E0)**2/S**2) +C
+
+def peak_temperature_function(
+    T,E0,a,T_D=760
+):
+    quad=np.array(
+        list(map(partial(integrate.quad,f1,0),T_D/T))
+    )[:,0]
+    return E0+a*((T/T_D)**4)*quad
+
+def f1(x):
+    return (x**3)/(np.exp(x)-1)
+
+def f2(x):
+    return (x**7)/((np.exp(x)-1)**2)
+
+def peak_width_temperature_function(
+    T,G0,a,T_D=760
+):
+    quad=np.array(
+        list(map(partial(integrate.quad,f2,0),T_D/T))
+    )[:,0]
+    return G0+a*((T/T_D)**7)*quad

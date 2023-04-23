@@ -47,10 +47,6 @@ sigma aldrich.
 \newblock Rhodamine 6g.
 \newblock https://www.sigmaaldrich.com/KR/ko/product/aldrich/252433.
 
-\bibitem{ruby_spec}
-someone.
-\newblock blah.
-
 \bibitem{condensed_matter_optics}
 someone.
 \newblock blah.
@@ -58,6 +54,16 @@ someone.
 \bibitem{quantum_optics}
 someone.
 \newblock blah.
+
+\bibitem{doping_ratio}
+Takeshi~Shigenari Taro~Toyoda, Takashi~Obikawa.
+\newblock Photoluminescence spectroscopy of $cr^{3+}$ in ceramicc $a1_2 o_3$.
+\newblock {\em materials Science and Engineering B54}, 1998.
+
+\bibitem{fitting_coef_impurity}
+J.~H. Van~Vleck.
+\newblock Paramagnetic relaxation times for titanium and chrome alum.
+\newblock {\em Phys. Rev.}, 57:426--447, Mar 1940.
 
 \bibitem{github_results}
 WoojinHan24.
