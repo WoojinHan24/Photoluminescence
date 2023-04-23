@@ -1,13 +1,51 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{compressor_spec}
+CSIC Pride (Nanjing) Cryogenic~Technology Co.
+\newblock Kdc 2000f.
+\newblock
+  \\http://www.724pridecryogenics.com/en/uploadfile/product/2018053111290290611.pdf.
+
+\bibitem{laser_spec}
+Shanghai Dream~Lasers co. ltd.
+\newblock Sdl-532-030t.
+\newblock
+  \\http://www.dreamlasers.cn/products/laser/Low\%20Noise\%20Lasers.htm.
 
 \bibitem{Ruby_band_structure}
 Joseph A. Calviello Edward~W. Fisheer and Zindel~H. Heller.
 \newblock Direct t-e phonon relaxation in ruby and its effect upon r-line
   breadth.
 
+\bibitem{ccd_spec}
+Oxford instuments.
+\newblock Andor idus 401 specifications.
+\newblock
+  \\https://andor.oxinst.com/assets/uploads/products/andor/documents/andor-idus-401-specifications.pdf.
+
+\bibitem{Rhodamine_dimer}
+I~T~Sugiarto Isnaeni and K~Y Putri.
+\newblock Analysis of dual peak emission from rhodamine 6g organic dyes using
+  photoluminescence.
+
+\bibitem{rhodamine_HOMO_LUMO}
+Lasse Jensen and George~C. Schatz.
+\newblock Resonance raman scattering of rhodamine 6g as calculated using
+  time-dependent density functional theory.
+
 \bibitem{Ruby_temp_theoretical}
 D.~E. McCumber and M.~D. Sturge.
 \newblock Linewidth and temperature shift of the r lines in ruby.
+
+\bibitem{spectrograph_spec}
+Dongwoo optron.
+\newblock Monora 500i.
+\newblock \\http://www.dwoptron.com/yc/data/item/1467027407/Monochromator.pdf.
+
+\bibitem{rhodamine_sigma_aldrich}
+sigma aldrich.
+\newblock Rhodamine 6g.
+\newblock https://www.sigmaaldrich.com/KR/ko/product/aldrich/252433.
 
 \bibitem{ruby_spec}
 someone.
@@ -20,5 +58,11 @@ someone.
 \bibitem{quantum_optics}
 someone.
 \newblock blah.
+
+\bibitem{github_results}
+WoojinHan24.
+\newblock Photoluminescence.
+\newblock
+  \url{https://github.com/WoojinHan24/Photoluminescence/tree/master/results}.
 
 \end{thebibliography}

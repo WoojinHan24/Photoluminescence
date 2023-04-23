@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.23)  21 APR 2023 07:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.23)  23 APR 2023 14:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -301,51 +301,133 @@ LaTeX Info: Redefining \nameref on input line 15.
 \@outlinefile=\write3
 \openout3 = `photoluminescence_report.out'.
 
-
-Overfull \hbox (11.05084pt too wide) in paragraph at lines 26--31
-\T1/cmr/m/n/10 tained.([]3.2[]) The ef-fect by iris of ap-pa-ra-tus to PL re-sult is de-clared, and proved.([]3.1[])
- []
-
-<../results/intro_energy_absortion.png, id=43, 189.70876pt x 189.70876pt>
+<../results/intro_energy_absortion.png, id=51, 189.70876pt x 189.70876pt>
 File: ../results/intro_energy_absortion.png Graphic file (type png)
 <use ../results/intro_energy_absortion.png>
 Package pdftex.def Info: ../results/intro_energy_absortion.png  used on input line 43.
 (pdftex.def)             Requested size: 113.81102pt x 113.81165pt.
-<../results/intro_energy_emission.png, id=45, 259.7203pt x 266.49562pt>
+<../results/intro_energy_emission.png, id=53, 259.7203pt x 266.49562pt>
 File: ../results/intro_energy_emission.png Graphic file (type png)
 <use ../results/intro_energy_emission.png>
 Package pdftex.def Info: ../results/intro_energy_emission.png  used on input line 49.
 (pdftex.def)             Requested size: 113.81102pt x 116.7786pt.
-<../results/Ruby(170.0)_raw_fig.png, id=48, 433.62pt x 289.08pt>
+<../results/Ruby(170.0)_raw_fig.png, id=56, 433.62pt x 289.08pt>
 File: ../results/Ruby(170.0)_raw_fig.png Graphic file (type png)
 <use ../results/Ruby(170.0)_raw_fig.png>
 Package pdftex.def Info: ../results/Ruby(170.0)_raw_fig.png  used on input line 59.
 (pdftex.def)             Requested size: 227.62204pt x 151.74721pt.
-[1
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <../results/intro_energy_absortion.png> <../results/intro_energy_emission.png> <../results/Ruby(170.0)_raw_fig.png>] [3]
-<../results/ruby_band_diagram.png, id=104, 367.3725pt x 420.82219pt>
+<../results/ruby_band_diagram.png, id=112, 367.3725pt x 420.82219pt>
 File: ../results/ruby_band_diagram.png Graphic file (type png)
 <use ../results/ruby_band_diagram.png>
-Package pdftex.def Info: ../results/ruby_band_diagram.png  used on input line 132.
+Package pdftex.def Info: ../results/ruby_band_diagram.png  used on input line 133.
 (pdftex.def)             Requested size: 170.71652pt x 195.55829pt.
- (./photoluminescence_report.bbl [4 <../results/ruby_band_diagram.png>]) [5] (./photoluminescence_report.aux)
+<../results/Rhodamin_structure.png, id=116, 551.81157pt x 323.70938pt>
+File: ../results/Rhodamin_structure.png Graphic file (type png)
+<use ../results/Rhodamin_structure.png>
+Package pdftex.def Info: ../results/Rhodamin_structure.png  used on input line 148.
+(pdftex.def)             Requested size: 170.71652pt x 100.14635pt.
+ [4 <../results/ruby_band_diagram.png>]
+<../results/Rhodamine_homo_lumo.png, id=128, 271.0125pt x 572.89032pt>
+File: ../results/Rhodamine_homo_lumo.png Graphic file (type png)
+<use ../results/Rhodamine_homo_lumo.png>
+Package pdftex.def Info: ../results/Rhodamine_homo_lumo.png  used on input line 161.
+(pdftex.def)             Requested size: 113.81102pt x 240.58606pt.
+ [5 <../results/Rhodamin_structure.png> <../results/Rhodamine_homo_lumo.png>]
+<../results/spectrograph_sketch.png, id=149, 194.22563pt x 224.33812pt>
+File: ../results/spectrograph_sketch.png Graphic file (type png)
+<use ../results/spectrograph_sketch.png>
+Package pdftex.def Info: ../results/spectrograph_sketch.png  used on input line 199.
+(pdftex.def)             Requested size: 85.35826pt x 98.59268pt.
+<../results/total_module_sketch.png, id=150, 609.02531pt x 323.70938pt>
+File: ../results/total_module_sketch.png Graphic file (type png)
+<use ../results/total_module_sketch.png>
+Package pdftex.def Info: ../results/total_module_sketch.png  used on input line 205.
+(pdftex.def)             Requested size: 170.71652pt x 90.73679pt.
+ [6 <../results/spectrograph_sketch.png> <../results/total_module_sketch.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 233.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (76.38354pt too wide) in paragraph at lines 230--243
+ [][] 
+ []
+
+<../results/Ruby s5-1_raw_fig.png, id=169, 433.62pt x 289.08pt>
+File: ../results/Ruby s5-1_raw_fig.png Graphic file (type png)
+<use ../results/Ruby s5-1_raw_fig.png>
+Package pdftex.def Info: ../results/Ruby s5-1_raw_fig.png  used on input line 261.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+<../results/Ruby s30-1_raw_fig.png, id=170, 433.62pt x 289.08pt>
+File: ../results/Ruby s30-1_raw_fig.png Graphic file (type png)
+<use ../results/Ruby s30-1_raw_fig.png>
+Package pdftex.def Info: ../results/Ruby s30-1_raw_fig.png  used on input line 267.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+<../results/R6G(1)_raw_fig.png, id=173, 433.62pt x 289.08pt>
+File: ../results/R6G(1)_raw_fig.png Graphic file (type png)
+<use ../results/R6G(1)_raw_fig.png>
+Package pdftex.def Info: ../results/R6G(1)_raw_fig.png  used on input line 285.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+<../results/R6G(1)_gaussian_fitted_fig.png, id=174, 433.62pt x 289.08pt>
+File: ../results/R6G(1)_gaussian_fitted_fig.png Graphic file (type png)
+<use ../results/R6G(1)_gaussian_fitted_fig.png>
+Package pdftex.def Info: ../results/R6G(1)_gaussian_fitted_fig.png  used on input line 291.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+Overfull \hbox (9.65515pt too wide) in paragraph at lines 276--298
+\T1/cmr/m/n/10 stat-ics of five re-peated de-tec-tion is pro-vided at Fig. []10[]. $\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 A[]e[]$
+ []
+
+[7] [8 <../results/Ruby s5-1_raw_fig.png> <../results/Ruby s30-1_raw_fig.png> <../results/R6G(1)_raw_fig.png> <../results/R6G(1)_gaussian_fitted_fig.png>]
+<../results/R6G_total_fig.png, id=203, 462.528pt x 346.896pt>
+File: ../results/R6G_total_fig.png Graphic file (type png)
+<use ../results/R6G_total_fig.png>
+Package pdftex.def Info: ../results/R6G_total_fig.png  used on input line 329.
+(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+<../results/Raman_shift.png, id=204, 365.11406pt x 254.45062pt>
+File: ../results/Raman_shift.png Graphic file (type png)
+<use ../results/Raman_shift.png>
+Package pdftex.def Info: ../results/Raman_shift.png  used on input line 335.
+(pdftex.def)             Requested size: 170.71652pt x 118.97447pt.
+ (./photoluminescence_report.bbl
+Overfull \hbox (55.04242pt too wide) in paragraph at lines 4--8
+\T1/cmr/m/n/10 http://www.724pridecryogenics.com/en/uploadfile/product/2018053111290290611.pdf. 
+ []
+
+
+Overfull \hbox (12.13623pt too wide) in paragraph at lines 21--25
+\T1/cmr/m/n/10 https://andor.oxinst.com/assets/uploads/products/andor/documents/andor-
+ []
+
+[9 <../results/R6G_total_fig.png> <../results/Raman_shift.png>]
+Overfull \hbox (6.66534pt too wide) in paragraph at lines 41--44
+\T1/cmr/m/n/10 http://www.dwoptron.com/yc/data/item/1467027407/Monochromator.pdf. 
+ []
+
+
+Overfull \hbox (87.36218pt too wide) in paragraph at lines 46--49
+[]\T1/cmr/m/n/10 sigma aldrich.  Rho-damine 6g.  https://www.sigmaaldrich.com/KR/ko/product/aldrich/252433. 
+ []
+
+) [10] (./photoluminescence_report.aux)
 Package rerunfilecheck Info: File `photoluminescence_report.out' has not changed.
-(rerunfilecheck)             Checksum: 80EA37060A1CE36C423584B4AF9B5C8A;1367.
+(rerunfilecheck)             Checksum: 186B63D5FD4F21318AD1A75B926C8805;1542.
  ) 
 Here is how much of TeX's memory you used:
- 10567 strings out of 478287
- 170443 string characters out of 5849289
- 463081 words of memory out of 5000000
- 28607 multiletter control sequences out of 15000+600000
- 480042 words of font info for 51 fonts, out of 8000000 for 9000
+ 10700 strings out of 478287
+ 174255 string characters out of 5849289
+ 464228 words of memory out of 5000000
+ 28703 multiletter control sequences out of 15000+600000
+ 480355 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,63p,395b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on photoluminescence_report.pdf (5 pages, 315307 bytes).
+ 60i,10n,63p,390b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on photoluminescence_report.pdf (10 pages, 795585 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -614,6 +614,61 @@ INPUT ../results/ruby_band_diagram.png
 INPUT ../results/ruby_band_diagram.png
 INPUT ../results/ruby_band_diagram.png
 INPUT ../results/ruby_band_diagram.png
+INPUT ../results/Rhodamin_structure.png
+INPUT ../results/Rhodamin_structure.png
+INPUT ../results/Rhodamin_structure.png
+INPUT ../results/Rhodamin_structure.png
+INPUT ../results/Rhodamin_structure.png
+INPUT ../results/Rhodamine_homo_lumo.png
+INPUT ../results/Rhodamine_homo_lumo.png
+INPUT ../results/Rhodamine_homo_lumo.png
+INPUT ../results/Rhodamine_homo_lumo.png
+INPUT ../results/Rhodamine_homo_lumo.png
+INPUT ../results/spectrograph_sketch.png
+INPUT ../results/spectrograph_sketch.png
+INPUT ../results/spectrograph_sketch.png
+INPUT ../results/spectrograph_sketch.png
+INPUT ../results/spectrograph_sketch.png
+INPUT ../results/total_module_sketch.png
+INPUT ../results/total_module_sketch.png
+INPUT ../results/total_module_sketch.png
+INPUT ../results/total_module_sketch.png
+INPUT ../results/total_module_sketch.png
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
+INPUT ../results/Ruby s5-1_raw_fig.png
+INPUT ../results/Ruby s5-1_raw_fig.png
+INPUT ../results/Ruby s5-1_raw_fig.png
+INPUT ../results/Ruby s5-1_raw_fig.png
+INPUT ../results/Ruby s5-1_raw_fig.png
+INPUT ../results/Ruby s30-1_raw_fig.png
+INPUT ../results/Ruby s30-1_raw_fig.png
+INPUT ../results/Ruby s30-1_raw_fig.png
+INPUT ../results/Ruby s30-1_raw_fig.png
+INPUT ../results/Ruby s30-1_raw_fig.png
+INPUT ../results/R6G(1)_raw_fig.png
+INPUT ../results/R6G(1)_raw_fig.png
+INPUT ../results/R6G(1)_raw_fig.png
+INPUT ../results/R6G(1)_raw_fig.png
+INPUT ../results/R6G(1)_raw_fig.png
+INPUT ../results/R6G(1)_gaussian_fitted_fig.png
+INPUT ../results/R6G(1)_gaussian_fitted_fig.png
+INPUT ../results/R6G(1)_gaussian_fitted_fig.png
+INPUT ../results/R6G(1)_gaussian_fitted_fig.png
+INPUT ../results/R6G(1)_gaussian_fitted_fig.png
+INPUT ../results/R6G_total_fig.png
+INPUT ../results/R6G_total_fig.png
+INPUT ../results/R6G_total_fig.png
+INPUT ../results/R6G_total_fig.png
+INPUT ../results/R6G_total_fig.png
+INPUT ../results/Raman_shift.png
+INPUT ../results/Raman_shift.png
+INPUT ../results/Raman_shift.png
+INPUT ../results/Raman_shift.png
+INPUT ../results/Raman_shift.png
 INPUT ./photoluminescence_report.bbl
 INPUT photoluminescence_report.bbl
 INPUT ./photoluminescence_report.bbl
@@ -627,8 +682,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb
@@ -638,3 +695,4 @@ INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb
+INPUT /usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb

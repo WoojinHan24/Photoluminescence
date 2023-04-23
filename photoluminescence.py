@@ -1,6 +1,8 @@
 import sif_parser
 import matplotlib.pyplot as plt
 from scipy.special import voigt_profile as voigt
+import numpy as np
+from scipy.constants import pi
 
 def get_sif_file(
     file_name
@@ -90,3 +92,8 @@ def one_voigt_function(
     #A is the amplitude of each peak
     #C is the constant counts
     return A1*voigt(E-E1,S,G1)+C
+
+def one_gaussian_function(
+    E,E0,S,A,C
+):
+    return A/np.sqrt(2*pi)/S * np.exp(-0.5*(E-E0)**2/S**2) +C
