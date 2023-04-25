@@ -590,8 +590,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT ../results/intro_energy_absortion.png
 INPUT ../results/intro_energy_absortion.png
@@ -608,6 +606,8 @@ INPUT ../results/Ruby(170.0)_raw_fig.png
 INPUT ../results/Ruby(170.0)_raw_fig.png
 INPUT ../results/Ruby(170.0)_raw_fig.png
 INPUT ../results/Ruby(170.0)_raw_fig.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT ../results/ruby_band_diagram.png
 INPUT ../results/ruby_band_diagram.png
@@ -699,6 +699,16 @@ INPUT ../results/Ruby_temperature_width_fig.png
 INPUT ../results/Ruby_temperature_width_fig.png
 INPUT ../results/Ruby_temperature_width_fig.png
 INPUT ../results/Ruby_temperature_width_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_loglog_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_loglog_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_loglog_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_loglog_fig.png
+INPUT ../results/Ruby_temperature_height_ratio_loglog_fig.png
 INPUT ./photoluminescence_report.bbl
 INPUT photoluminescence_report.bbl
 INPUT ./photoluminescence_report.bbl

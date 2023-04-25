@@ -4,7 +4,9 @@ from scipy.special import voigt_profile as voigt
 import numpy as np
 import scipy.integrate as integrate
 from functools import partial
+from scipy.stats import linregress  as lng
 from scipy.constants import pi
+from scipy.constants import Boltzmann as k
 
 def get_sif_file(
     file_name
@@ -81,6 +83,39 @@ def plot_temperature_width_fig(
     fig.tight_layout()
     return fig
 
+def plot_temperature_height_ratio_raw_plot(
+    temperatures, height_ratio, height_ratio_err
+):
+    fig=plt.figure(figsize=(6,4))
+    ax=fig.add_subplot(1,1,1)
+
+    ax.errorbar(temperatures,height_ratio,yerr=height_ratio_err, fmt='.k')
+    ax.set_xlabel('temperature [K]')
+    ax.set_ylabel('height ratio []')
+
+    return fig
+
+def plot_temperature_height_ratio_loglog_plot(
+    temperatures, height_ratios, height_ratio_err
+):
+    fig=plt.figure(figsize=(6,4))
+    ax=fig.add_subplot(1,1,1)
+    temp=np.linspace(1/45,1/270,200)
+
+    x= [xe for xe, ye in zip(1/temperatures, np.log(height_ratios)) if np.isnan(ye)==False]
+    y= [ye for xe, ye in zip(1/temperatures, np.log(height_ratios)) if np.isnan(ye)==False]
+
+    param = lng(x,y)
+    print(param)
+
+    ax.errorbar(1/temperatures,np.log(height_ratios),yerr=height_ratio_err/height_ratios, fmt='.k')
+    ax.plot(temp,param[0]*temp +param[1], 'r-',linewidth=2.0)
+    ax.set_xlabel('1/T [1/K]')
+    ax.set_ylabel('$log I_2 /I_1 $')
+
+    return fig
+
+
 
 def two_voigt_function(
     E, E1, E2, S, G1, G2, A1, A2, C
@@ -128,3 +163,8 @@ def peak_width_temperature_function(
         list(map(partial(integrate.quad,f2,0),T_D/T))
     )[:,0]
     return G0+a*((T/T_D)**7)*quad
+
+def height_ratio_temperature_function(
+    T,A,E
+):
+    return A*np.exp(-E**2/k/T)

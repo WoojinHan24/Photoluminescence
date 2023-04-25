@@ -17,6 +17,14 @@ Joseph A. Calviello Edward~W. Fisheer and Zindel~H. Heller.
 \newblock Direct t-e phonon relaxation in ruby and its effect upon r-line
   breadth.
 
+\bibitem{condensed_matter_optics}
+Mark Fox.
+\newblock Optical properties of solids.
+
+\bibitem{quantum_optics}
+Mark Fox.
+\newblock Quantum optics.
+
 \bibitem{ccd_spec}
 Oxford instuments.
 \newblock Andor idus 401 specifications.
@@ -47,17 +55,9 @@ sigma aldrich.
 \newblock Rhodamine 6g.
 \newblock https://www.sigmaaldrich.com/KR/ko/product/aldrich/252433.
 
-\bibitem{condensed_matter_optics}
-someone.
-\newblock blah.
-
-\bibitem{quantum_optics}
-someone.
-\newblock blah.
-
 \bibitem{doping_ratio}
 Takeshi~Shigenari Taro~Toyoda, Takashi~Obikawa.
-\newblock Photoluminescence spectroscopy of $cr^{3+}$ in ceramicc $a1_2 o_3$.
+\newblock Photoluminescence spectroscopy of $cr^{3+}$ in ceramic $a1_2 o_3$.
 \newblock {\em materials Science and Engineering B54}, 1998.
 
 \bibitem{fitting_coef_impurity}

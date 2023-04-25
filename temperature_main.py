@@ -151,3 +151,14 @@ temperature_two_peak_fig.savefig(f"./results/Ruby_temperature_peak_fig.png")
 temperature_width_fig.savefig(f"./results/Ruby_temperature_width_fig.png")
 
 
+R1=np.array([pl.one_voigt_function(left_peak,left_peak, S, left_peak_width, left_peak_height,0) for left_peak, S, left_peak_width, left_peak_height in zip(left_peaks, optical_broadening, left_peak_widths, left_peak_heights)])
+R2=np.array([pl.one_voigt_function(right_peak,right_peak, S, right_peak_width, right_peak_height,0) for right_peak,right_peak, S, right_peak_width, right_peak_height in zip(right_peaks,right_peaks, optical_broadening, right_peak_widths, right_peak_heights)])
+print(R1)
+height_ratios=R2/R1
+cnt_err=10
+height_ratios_err = np.sqrt((1/R1)**2 + (R2/R1**2)**2)*cnt_err
+
+temperature_height_ratio_fig=pl.plot_temperature_height_ratio_raw_plot(temperatures, height_ratios, height_ratios_err)
+temperature_height_ratio_fig.savefig("./results/Ruby_temperature_height_ratio_fig.png")
+temperature_height_ratio_loglog_fig=pl.plot_temperature_height_ratio_loglog_plot(np.array(temperatures),height_ratios,height_ratios_err)
+temperature_height_ratio_loglog_fig.savefig("./results/Ruby_temperature_height_ratio_loglog_fig.png")
